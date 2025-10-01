@@ -1,0 +1,3 @@
+export const APP_NAME : string = process.env.NEXT_PUBLIC_APP_NAME || 'Haatbazar'
+export const APP_DESCRIPTION = process.env.NEXT_APP_DESCRIPTION
+export const SERVER_URL = process.env.NEXT_PUBLIC_SERVER_URL || 'http://localhost:3000'
