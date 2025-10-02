@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button"; 
 import { APP_NAME } from "@/lib/constants"; 
 import NodeToggle from "./node-toggle";
+import Menu from "./menu";
 
 
 const Header = () => {
@@ -35,29 +36,8 @@ const Header = () => {
           </Link>
         </div>
 
+          <Menu/>
 
-        {/* Right section of the header (cart + sign in buttons) */}
-        <div className="space-x-2">
-          {/* Adds horizontal spacing between buttons */}
-
-          <NodeToggle/>
-
-          <Button asChild variant="ghost">
-            {/* "asChild" lets the button wrap around the Link component.
-                "ghost" is a minimal button style */}
-            <Link href="/cart">
-              <ShoppingCart /> Cart
-              {/* Shopping cart icon with label */}
-            </Link>
-          </Button>
-
-          <Button asChild>
-            <Link href="/sign-in">
-              <UserIcon /> Sign In
-              {/* User icon with sign in label */}
-            </Link>
-          </Button>
-        </div>
       </div>
     </header>
   );
