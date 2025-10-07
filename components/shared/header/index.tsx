@@ -1,3 +1,4 @@
+'use client'
 import { Ghost, ShoppingCart, UserIcon } from "lucide-react"; 
 import Image from "next/image"; 
 import Link from "next/link"; 
@@ -6,8 +7,11 @@ import { APP_NAME } from "@/lib/constants";
 import NodeToggle from "./node-toggle";
 import Menu from "./menu";
 
+import { useEffect } from "react";
 
 const Header = () => {
+
+ 
   return (
     <header className="w-full border-b">
       {/* Full width header with a bottom border */}
